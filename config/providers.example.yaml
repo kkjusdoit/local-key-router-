@@ -1,0 +1,13 @@
+local_api_key: sk-local-router-dev
+timeout_seconds: 60.0
+connect_timeout_seconds: 10.0
+stream_first_token_timeout_seconds: 18.0
+max_route_attempts: 6
+max_failures: 3
+circuit_breaker_seconds: 600
+providers:
+  - name: example-provider
+    base_url: https://api.example.com/v1
+    api_key: sk-replace-me
+    enabled: true
+    priority: 0
